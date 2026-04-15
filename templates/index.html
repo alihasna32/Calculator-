@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Calculator</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <div class="calc">
+    <form method="POST">
+      <input type="text" name="expression" id="display" value="{{ expression }}" readonly placeholder="0">
+      
+      <div style="text-align: right; margin: 8px 5px; font-size: 1.4rem; min-height: 30px;">
+        {{ result }}
+      </div>
+
+      <div class="buttons">
+        <button type="submit" name="action" value="clear" class="clear">C</button>
+        <button type="submit" name="action" value="delete">⌫</button>
+        <button type="submit" name="action" value="/">/</button>
+        <button type="submit" name="action" value="*">×</button>
+        
+        <button type="submit" name="action" value="7">7</button>
+        <button type="submit" name="action" value="8">8</button>
+        <button type="submit" name="action" value="9">9</button>
+        <button type="submit" name="action" value="-">-</button>
+        
+        <button type="submit" name="action" value="4">4</button>
+        <button type="submit" name="action" value="5">5</button>
+        <button type="submit" name="action" value="6">6</button>
+        <button type="submit" name="action" value="+">+</button>
+        
+        <button type="submit" name="action" value="1">1</button>
+        <button type="submit" name="action" value="2">2</button>
+        <button type="submit" name="action" value="3">3</button>
+        <button type="submit" name="action" value="calculate" class="equals">=</button>
+        
+        <button type="submit" name="action" value="0" class="zero">0</button>
+        <button type="submit" name="action" value=".">.</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
